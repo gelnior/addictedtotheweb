@@ -1,6 +1,6 @@
 # Cakefile for building application (makefile like).
 
-appName = "my_app"
+appName = "addictedtotheweb"
 
 # Dependencies
 sys    = require 'sys'

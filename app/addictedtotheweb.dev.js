@@ -41,6 +41,9 @@
     };
     return MyAppCollection;
   })();
+  myApp = new MyAppView;
+  myApp.setWidgets();
+  myApp.setListeners();
   MyModelRow = (function() {
     __extends(MyModelRow, Backbone.View);
     MyModelRow.prototype.tagName = "div";
@@ -87,7 +90,4 @@
     };
     return MyAppView;
   })();
-  myApp = new MyAppView;
-  myApp.setWidgets();
-  myApp.setListeners();
 }).call(this);

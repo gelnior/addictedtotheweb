@@ -1,0 +1,147 @@
+<html>
+<head>
+<link href="styles/addictedtotheweb.css" rel="stylesheet" 
+      type="text/css" media="screen" />
+<script type="text/javascript" src="/addictedtotheweb.js"></script>
+<script type="text/javascript" src="/dependencies/jquery.js"></script>
+<script type="text/javascript" src="/dependencies/underscore.js"></script>
+<script type="text/javascript" src="/dependencies/backbone.js"></script>
+<title>Frank Rousseau's Homepage</title>
+</head>
+<body>
+<div class="subject" id="presentation">
+<img id="photo" src="images/photo_identite2.jpg" />
+<h1>Frank Rousseau</h1>
+<p>
+The web connects billions of people, <br />
+Free culture allows global solidarity, <br />
+Search engines gives infinite knowledge, <br />
+Social networks lets massive sharing, <br />
+Because I want to be part of that, I make web apps.
+</p>
+</div>
+<!--h2>About me</h2>
+<p>
+My way of working is inspired By Rework and my way of life is ruled by Life 
+Manifesto (and little bit by Hacker Manifesto ;)). I love to waste time
+in cool bars and restaurants and I enjoy taking pictures and playing music.
+</p-->
+<div class="subject" id="publication">
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 3,
+  interval: 30000,
+  width: 'auto',
+  height: 300,
+  theme: {
+    shell: {
+      background: '#45b1e3',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#45b1e3',
+      color: '#ffffff',
+      links: '#050094'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    hashtags: false,
+    timestamp: false,
+    avatars: true,
+    behavior: 'all'
+  }
+}).render().setUser('gelnior').start();
+</script>
+<p>wordpress</p>
+<p>last blog posts</p>
+</div>
+<div class="subject" id="pictures">
+<p>flickr</p>
+<p>Flickr photo streamr</p>
+</div>
+<div class="spacer"></div>
+<div class="project" id="newebe">
+<img src="images/newebe_logo.jpg" />
+<h3>Newebe</h3>
+<p>
+Newebe is a distributed social network that aims to let you share while 
+preserving your privacy. Because you host Newbe at your home, you keep control
+on your data.
+</p>
+<p>
+technos: Coffeescript, Tornado, Couchdb.
+</p>
+<p class="related">
+related: <a href="">teatime</a>, a boilerplate to start quickly a web UI based
+on Coffeescript.
+</p>
+</div>
+<div class="project" id="artforge">
+<h3>Artforge</h3>
+<p>
+As a full-time employee, I work on Artforge a web application suite that
+allows CG studios to make efficient collaborative work to produce CG movies.
+</p>
+<p>
+technos: GWT, GXT, Restlet, MySQL
+</p>
+</div>
+
+<div class="project" id="beburlesque">
+<img src="images/beburlesque_logo.png" />
+<h3>Beburlesque</h3>
+<p>
+Beburlesque is a webzine about Burlesque culture. We published monthly 
+interviews, news, pictures galleries, event agenda... 
+</p>
+<p>
+technos: Drupal
+</p>
+<p class="related">
+Related : <a href="https://be-burlesque-shop.myshopify.com/">a shop</a> and 
+<a href="http://livre.fnac.com/a3619378/F-Rousseau-Be-burlesque">a book</a>
+</p>
+</div>
+
+<div class="project"  id="twinkso">
+<h3>Twinkso</h3>
+<p>
+Twinkso is a social network for artists, specially, photographers, models
+and make-up artists. The principle was that you build a simple portfolio
+displaying 3 pictures, a short bio and links to your usual pages. Then you list
+people with who you work. This links to your partners offer a nice browsing
+experience to the visitor.
+This project in on stand by, maybe I will work on it later.
+</p>
+technos: Django, MongoDB
+</p>
+</div>
+<div class="project" id="dolebrai">
+<img src="images/dolebrai_logo.jpg" />
+<h3>Dolebrai</h3>
+<p>
+Dolebrai was a webradio that brodcasted and promoted open music. 
+There was monthly mix and a blog about open music news. <br />
+This project is finished, the website and the radio are no more available.
+</p>
+<p>
+technos: Django, Liquidsoap, MySQL
+</p>
+<p class="related">
+related : 
+<a href="http://www.archive.org/details/DolebraCompilationVol.01">
+    Dolebrai Compilation vol. 01</a>, 
+<a href="http://www.archive.org/details/DolebraiCompilationVol.02">
+    Dolebrai Compilation vol. 02</a>
+</p>
+</div>
+<div class="spacer"></div>
+</body>
+</head>
+            

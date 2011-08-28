@@ -1,0 +1,78 @@
+body {
+  background-color: #4a4;
+  color: #fff;
+  font-family: sans-serif;
+}
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+h3 {
+  font-variant: small-caps;
+  font-size: 26px;
+}
+div.subject {
+  width: 28%;
+  padding: 20px;
+  float: left;
+}
+div.project {
+  width: 28%;
+  padding: 20px;
+  float: left;
+  min-height: 520px;
+  text-align: center;
+}
+p.related {
+  font-style: italic;
+}
+h1 {
+  font-variant: small-caps;
+}
+.spacer {
+  width: 100%;
+  clear: both;
+}
+#presentation {
+  background-color: #4a4;
+}
+#photo {
+  float: right;
+  padding-left: 20px;
+  padding-top: 20px;
+  width: 200px;
+}
+#publication {
+  background-color: #45b0e3;
+}
+#pictures {
+  background-color: #ff0084;
+}
+#newebe {
+  background-color: #fff;
+  color: #000;
+  border: 10px solid #000;
+}
+#artforge {
+  background-color: #f4a012;
+  color: #fff3dd;
+  border: 10px solid #ffe3b3;
+}
+#beburlesque {
+  background-color: #473531;
+  color: #fbe3dd;
+  border: 10px solid #fbe3dd;
+}
+#twinkso {
+  background-color: #000;
+  border: 10px solid #fff;
+}
+#dolebrai {
+  background-color: #6833cc;
+  color: #efe8fa;
+  border: 10px solid #efe8fa;
+}

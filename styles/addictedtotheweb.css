@@ -39,18 +39,26 @@ h1 {
 }
 #presentation {
   background-color: #4a4;
+  border: 10px solid #4a4;
 }
 #photo {
   float: right;
   padding-left: 20px;
   padding-top: 20px;
-  width: 200px;
+  width: 150px;
 }
 #publication {
   background-color: #45b0e3;
+  border: 10px solid #45b0e3;
+  min-height: 400px;
 }
 #pictures {
   background-color: #ff0084;
+  border: 10px solid #ff0084;
+  min-height: 400px;
+}
+#pictures h3 {
+  text-align: center;
 }
 #newebe {
   background-color: #fff;
@@ -67,6 +75,9 @@ h1 {
   color: #fbe3dd;
   border: 10px solid #fbe3dd;
 }
+#your-project {
+  border: 10px solid transparent;
+}
 #twinkso {
   background-color: #000;
   border: 10px solid #fff;
@@ -75,4 +86,11 @@ h1 {
   background-color: #6833cc;
   color: #efe8fa;
   border: 10px solid #efe8fa;
+}
+#latest-flickr-images ul {
+  list-style-type: none;
+}
+.emphaze {
+  font-style: italic;
+  font-size: 20px;
 }

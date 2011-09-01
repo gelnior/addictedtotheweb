@@ -1,5 +1,5 @@
 (function() {
-  var MyAppCollection, MyAppView, MyModel, MyModelRow, myApp;
+  var MyAppCollection, MyAppView, MyModel, MyModelRow;
   var __hasProp = Object.prototype.hasOwnProperty, __extends = function(child, parent) {
     for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; }
     function ctor() { this.constructor = child; }
@@ -34,16 +34,13 @@
       MyAppCollection.__super__.constructor.apply(this, arguments);
     }
     __extends(MyAppCollection, Backbone.Collection);
-    MyAppCollection.prototype.model = MyApp;
+    MyAppCollection.prototype.model = MyModel;
     MyAppCollection.prototype.url = '/my-app/';
     MyAppCollection.prototype.parse = function(response) {
       return response.rows;
     };
     return MyAppCollection;
   })();
-  myApp = new MyAppView;
-  myApp.setWidgets();
-  myApp.setListeners();
   MyModelRow = (function() {
     __extends(MyModelRow, Backbone.View);
     MyModelRow.prototype.tagName = "div";

@@ -2,31 +2,40 @@
 <head>
 <link href="styles/addictedtotheweb.css" rel="stylesheet" 
       type="text/css" media="screen" />
-<script type="text/javascript" src="/addictedtotheweb.js"></script>
-<script type="text/javascript" src="/dependencies/jquery.js"></script>
-<script type="text/javascript" src="/dependencies/underscore.js"></script>
-<script type="text/javascript" src="/dependencies/backbone.js"></script>
+<script type="text/javascript" src="dependencies/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="dependencies/underscore-min.js"></script>
+<script type="text/javascript" src="dependencies/backbone-min.js"></script>
+<script type="text/javascript" src="app/addictedtotheweb.dev.js"></script>
+<meta name="description" content="
+The web connects billions of people, 
+Free culture allows global solidarity, 
+Search engines gives infinite knowledge, 
+Social networks lets massive sharing, <
+Because I want to be part of that, I make web apps." />
 <title>Frank Rousseau's Homepage</title>
 </head>
 <body>
-<div class="subject" id="presentation">
-<img id="photo" src="images/photo_identite2.jpg" />
-<h1>Frank Rousseau</h1>
+  <div class="subject" id="presentation">
+      <a href="http://fr.linkedin.com/in/frankrousseau">
+          <img id="photo" src="images/photo_identite2.jpg" />
+      </a>
+      <h1>Frank Rousseau</h1>
+      <h2>Web addict</h2>
 <p>
-The web connects billions of people, <br />
+The <span class="emphaze">
+    web</span> connects billions of people, <br />
 Free culture allows global solidarity, <br />
 Search engines gives infinite knowledge, <br />
 Social networks lets massive sharing, <br />
-Because I want to be part of that, I make web apps.
+<span class="emphaze">
+    Because I want to be part of that, I make web apps.
+</span>
 </p>
+<p>For info, I like <a href="http://37signals.com/rework/">Rework</a> and 
+<a href="http://9gag.com/gag/36806">Life Manifesto</a>.</p>
 </div>
-<!--h2>About me</h2>
-<p>
-My way of working is inspired By Rework and my way of life is ruled by Life 
-Manifesto (and little bit by Hacker Manifesto ;)). I love to waste time
-in cool bars and restaurants and I enjoy taking pictures and playing music.
-</p-->
 <div class="subject" id="publication">
+    <h3>Writings</h3>
 <script src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script>
 new TWTR.Widget({
@@ -58,20 +67,38 @@ new TWTR.Widget({
   }
 }).render().setUser('gelnior').start();
 </script>
-<p>wordpress</p>
-<p>last blog posts</p>
+<p>I have a <a href="http://gelnior.wordpress.com/">French blog</a> about 
+UI, coding and Newebe.</p>
 </div>
 <div class="subject" id="pictures">
-<p>flickr</p>
-<p>Flickr photo streamr</p>
+    <h3>My last flickr picture</h3>
+    <div id="latest-flickr-images"><ul></ul></div>
+    <script>
+$(document).ready(function() {
+  $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=32407380@N00&format=json&jsoncallback=?", function(data) {
+  var target = "#latest-flickr-images ul"; // Where is it going?
+  for (i = 0; i <= 0; i = i + 1) { // Loop through the 10 most recent, [0-9]
+    var pic = data.items[i];
+    var liNumber = i + 1; // Add class to each LI (1-10)
+    $(target).append("<li class='flickr-image no-" + liNumber + "'><a title='" + pic.title + "' href='" + pic.link + "'><img src='" + pic.media.m + "' /></a></li>");
+  }
+});
+})
+    </script>
+    <p>About hobbies, I love photo 
+    (<a href="http://www.twinkso.com/protfolios/photograph/frank-r/">my portfolio</a>)
+    and I play the clarinet. I also enjoy chilling into cool bars and nice
+    restaurants.</p>
 </div>
 <div class="spacer"></div>
 <div class="project" id="newebe">
+    <a href="http://www.newebe.org/">
 <img src="images/newebe_logo.jpg" />
 <h3>Newebe</h3>
+</a>
 <p>
 Newebe is a distributed social network that aims to let you share while 
-preserving your privacy. Because you host Newbe at your home, you keep control
+preserving your privacy. Because you host Newebe at your home, you keep control
 on your data.
 </p>
 <p>
@@ -82,8 +109,10 @@ related: <a href="">teatime</a>, a boilerplate to start quickly a web UI based
 on Coffeescript.
 </p>
 </div>
-<div class="project" id="artforge">
-<h3>Artforge</h3>
+    <div class="project" id="artforge">
+  <a href="http://www.hd3d.fr/artforge/">
+    <h3>Artforge</h3>
+  </a>
 <p>
 As a full-time employee, I work on Artforge a web application suite that
 allows CG studios to make efficient collaborative work to produce CG movies.
@@ -94,11 +123,13 @@ technos: GWT, GXT, Restlet, MySQL
 </div>
 
 <div class="project" id="beburlesque">
+  <a href="http://www.beburlesque.com/">
 <img src="images/beburlesque_logo.png" />
 <h3>Beburlesque</h3>
+</a>
 <p>
 Beburlesque is a webzine about Burlesque culture. We published monthly 
-interviews, news, pictures galleries, event agenda... 
+interviews, news, picture galleries, event agenda... 
 </p>
 <p>
 technos: Drupal
@@ -110,7 +141,9 @@ Related : <a href="https://be-burlesque-shop.myshopify.com/">a shop</a> and
 </div>
 
 <div class="project"  id="twinkso">
-<h3>Twinkso</h3>
+  <a href="http://www.twinkso.com/">
+    <h3>Twinkso</h3>
+  </a>
 <p>
 Twinkso is a social network for artists, specially, photographers, models
 and make-up artists. The principle was that you build a simple portfolio
@@ -141,7 +174,18 @@ related :
     Dolebrai Compilation vol. 02</a>
 </p>
 </div>
+
+<div class="project" id="your-project">
+    <h3>Your project ?</h3>
+    <p>If you have some cool projects in mind, let me know maybe we could
+    collaborate. For that, just send me an email to: <br />
+
+    <strong>
+        frank [dot] rousseau [at] free [dot] fr
+    </strong>
+    </p>
+
+</div>
 <div class="spacer"></div>
 </body>
-</head>
-            
+</html> 

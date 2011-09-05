@@ -34,6 +34,7 @@ div.subject {
   padding: 20px;
   min-height: 490px;
   float: left;
+  border: 10px solid transparent;
 }
 div.project {
   width: 27%;
@@ -41,6 +42,7 @@ div.project {
   float: left;
   min-height: 600px;
   text-align: center;
+  border: 10px solid transparent;
 }
 p.related {
   font-style: italic;
@@ -51,7 +53,6 @@ p.related {
 }
 #presentation {
   background-color: #4a4;
-  border: 10px solid #4a4;
 }
 #photo {
   float: right;
@@ -61,12 +62,10 @@ p.related {
 }
 #publication {
   background-color: #45b0e3;
-  border: 10px solid #45b0e3;
   text-align: center;
 }
 #pictures {
   background-color: #ff0084;
-  border: 10px solid #ff0084;
   text-align: center;
 }
 #pictures h3 {
@@ -75,29 +74,24 @@ p.related {
 #newebe {
   background-color: #fff;
   color: #000;
-  border: 10px solid #000;
 }
 #artforge {
   background-color: #f4a012;
   color: #fff3dd;
-  border: 10px solid #ffe3b3;
 }
 #beburlesque {
   background-color: #473531;
   color: #fbe3dd;
-  border: 10px solid #fbe3dd;
 }
 #your-project {
   border: 10px solid transparent;
 }
 #twinkso {
   background-color: #000;
-  border: 10px solid #fff;
 }
 #dolebrai {
   background-color: #6833cc;
   color: #efe8fa;
-  border: 10px solid #efe8fa;
 }
 #latest-flickr-images ul {
   list-style-type: none;

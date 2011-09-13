@@ -1,5 +1,5 @@
 body {
-  background-color: #4a4;
+  background-color: #848;
   color: #fff;
   font-family: sans-serif;
 }
@@ -85,6 +85,7 @@ p.related {
 }
 #your-project {
   border: 10px solid transparent;
+  background-color: #4a4;
 }
 #twinkso {
   background-color: #000;

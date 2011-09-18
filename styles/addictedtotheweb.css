@@ -3,6 +3,9 @@ body {
   color: #fff;
   font-family: sans-serif;
 }
+img {
+  border: 0px solid transparent;
+}
 a {
   font-weight: bold;
   text-decoration: none;

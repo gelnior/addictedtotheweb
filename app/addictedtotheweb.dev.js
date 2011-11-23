@@ -30,10 +30,10 @@
     return MyModel;
   })();
   MyAppCollection = (function() {
+    __extends(MyAppCollection, Backbone.Collection);
     function MyAppCollection() {
       MyAppCollection.__super__.constructor.apply(this, arguments);
     }
-    __extends(MyAppCollection, Backbone.Collection);
     MyAppCollection.prototype.model = MyModel;
     MyAppCollection.prototype.url = '/my-app/';
     MyAppCollection.prototype.parse = function(response) {

@@ -56,6 +56,9 @@ p.related {
 }
 #presentation {
   background-color: #4a4;
+  -webkit-border-top-left-radius: 30px 20px;
+  -moz-border-top-left-radius: 30px 20px;
+  border-top-left-radius: 30px 20px;
 }
 #photo {
   float: right;
@@ -70,6 +73,12 @@ p.related {
 #pictures {
   background-color: #ff0084;
   text-align: center;
+  -webkit-border-top-right-radius: 30px 20px;
+  -moz-border-top-right-radius: 30px 20px;
+  border-top-right-radius: 30px 20px;
+  -moz-box-shadow: 5px 5px 5px #404;
+  -webkit-box-shadow: 5px 5px 5px #404;
+  box-shadow: 5px 5px 5px #404;
 }
 #pictures h3 {
   text-align: center;
@@ -81,6 +90,12 @@ p.related {
 #artforge {
   background-color: #f4a012;
   color: #fff3dd;
+  -webkit-border-bottom-left-radius: 30px 20px;
+  -moz-border-bottom-left-radius: 30px 20px;
+  border-bottom-left-radius: 30px 20px;
+  -moz-box-shadow: 5px 5px 5px #404;
+  -webkit-box-shadow: 5px 5px 5px #404;
+  box-shadow: 5px 5px 5px #404;
 }
 #beburlesque {
   background-color: #473531;
@@ -89,13 +104,25 @@ p.related {
 #your-project {
   border: 10px solid transparent;
   background-color: #4a4;
+  -webkit-border-bottom-right-radius: 30px 20px;
+  -moz-border-bottom-right-radius: 30px 20px;
+  border-bottom-right-radius: 30px 20px;
+  -moz-box-shadow: 5px 5px 5px #404;
+  -webkit-box-shadow: 5px 5px 5px #404;
+  box-shadow: 5px 5px 5px #404;
 }
 #twinkso {
   background-color: #000;
+  -moz-box-shadow: 5px 5px 5px #404;
+  -webkit-box-shadow: 5px 5px 5px #404;
+  box-shadow: 5px 5px 5px #404;
 }
 #dolebrai {
   background-color: #6833cc;
   color: #efe8fa;
+  -moz-box-shadow: 5px 5px 5px #404;
+  -webkit-box-shadow: 5px 5px 5px #404;
+  box-shadow: 5px 5px 5px #404;
 }
 #latest-flickr-images ul {
   list-style-type: none;

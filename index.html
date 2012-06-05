@@ -1,208 +1,219 @@
-<html>
-    <head>
-<link rel="icon" 
-      type="image/png" 
-      href="images/favicon.ico">
-<link href="styles/addictedtotheweb.css" rel="stylesheet" 
-      type="text/css" media="screen" />
-<script type="text/javascript" src="dependencies/jquery-1.6.2.min.js"></script>
-<script type="text/javascript" src="dependencies/underscore-min.js"></script>
-<script type="text/javascript" src="dependencies/backbone-min.js"></script>
-<script type="text/javascript" src="app/addictedtotheweb.dev.js"></script>
-<meta name="description" content="
-The web connects billions of people, 
-Free culture allows global solidarity, 
-Search engines gives infinite knowledge, 
-Social networks lets massive sharing, <
-Because I want to be part of that, I make web apps." />
-<title>Frank Rousseau's Homepage</title>
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" 
+          type="image/png" 
+          href="images/favicon.ico" />
+    <link href="styles/addictedtotheweb.css" rel="stylesheet" 
+          type="text/css" media="screen" />
+    <script type="text/javascript"
+            src="dependencies/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" 
+            src="dependencies/underscore-min.js"></script>
+    <script type="text/javascript" 
+            src="dependencies/backbone-min.js"></script>
+    <script type="text/javascript" 
+            src="app/addictedtotheweb.dev.js"></script>
+    <meta name="description" content="
+        The web connects billions of people, 
+        Free culture allows global solidarity, 
+        Search engines gives infinite knowledge, 
+        Social networks lets massive sharing, <
+        Because I want to be part of that, I make web apps." />
+    <title>Frank Rousseau's Homepage</title>
 </head>
+
 <body>
 <div class="content">
-  <div class="subject" id="presentation">
-      <h1>Frank Rousseau</h1>
-      <a href="http://fr.linkedin.com/in/frankrousseau">
-          <img id="photo" src="images/photo_identite2.jpg" />
-      </a>
-      <h2>Web addict</h2>
-<p>
-The <span class="emphaze">
-    web</span> connects billions of people, <br />
-Free culture allows global solidarity, <br />
-Search engines gives infinite knowledge, <br />
-Social networks lets massive sharing, <br />
-<span class="emphaze">
-    Because I want to be part of that, I make web apps.
-</span>
-</p>
-</div>
-<div class="subject" id="publication">
-    <h3>Writings</h3>
-<script src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 3,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-    shell: {
-      background: '#45b1e3',
-      color: '#ffffff'
-    },
-    tweets: {
-      background: '#45b1e3',
-      color: '#ffffff',
-      links: '#050094'
-    }
-  },
-  features: {
-    scrollbar: false,
-    loop: false,
-    live: false,
-    hashtags: false,
-    timestamp: false,
-    avatars: true,
-    behavior: 'all'
-  }
-}).render().setUser('gelnior').start();
-</script>
-<p>I have a <a href="http://gelnior.wordpress.com/">blog</a> about 
-coding and social networks.</p>
-<h4>inspirations</h4>
-<p>I like <a href="http://37signals.com/rework/">Rework</a> and 
-<a href="http://9gag.com/gag/36806">Life Manifesto</a>.</p>
-</div>
-<div class="subject" id="pictures">
-    <h3>Hobbies</h3>
-    <div id="latest-flickr-images"><ul></ul></div>
-    <script>
-$(document).ready(function() {
-  $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=32407380@N00&format=json&jsoncallback=?", function(data) {
-  var target = "#latest-flickr-images ul"; // Where is it going?
-  for (i = 0; i <= 0; i = i + 1) { // Loop through the 10 most recent, [0-9]
-    var pic = data.items[i];
-    var liNumber = i + 1; // Add class to each LI (1-10)
-    $(target).append("<li class='flickr-image no-" + liNumber + "'><a title='" + pic.title + "' href='" + pic.link + "'><img src='" + pic.media.m + "' /></a></li>");
-  }
-});
-})
-    </script>
-    <p>About hobbies, I love photo 
-    (here is <a href="http://www.twinkso.com/portfolios/photograph/frank-r/">my portfolio</a>)
-    and I play the clarinet. I also enjoy chilling into cool bars and nice
-    restaurants.</p>
-</div>
-<div class="spacer"></div>
+    <div class="subject" id="presentation">
+        <h1>Frank Rousseau</h1>
+        <a href="http://fr.linkedin.com/in/frankrousseau">
+            <img id="photo" alt="My photo" src="images/photo_identite2.jpg" />
+        </a>
+        <h2>Web addict</h2>
+        <p>
+            The <span class="emphaze">
+            web</span> connects billions of people, <br />
+            Free culture allows global solidarity, <br />
+            Search engines gives infinite knowledge, <br />
+            Social networks lets massive sharing, <br />
+            <span class="emphaze">
+                Because I want to be part of that, I make web apps.
+            </span>
+        </p>
+    </div>
+    <div class="subject" id="publication">
+        <h3>Writings</h3>
+        <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+        <script>
+            new TWTR.Widget({
+                    version: 2,
+                    type: 'profile',
+                    rpp: 3,
+                    interval: 30000,
+                    width: 'auto',
+                    height: 300,
+                    theme: {
+                        shell: {
+                            background: '#45b1e3',
+                            color: '#ffffff'
+                        },
+                        tweets: {
+                            background: '#45b1e3',
+                            color: '#ffffff',
+                            links: '#050094'
+                        }
+                    },
+                    features: {
+                        scrollbar: false,
+                        loop: false,
+                        live: false,
+                        hashtags: false,
+                        timestamp: false,
+                        avatars: true,
+                        behavior: 'all'
+                }
+            }).render().setUser('gelnior').start();
+        </script>
+        <p>
+            Here is my blog <a href="http://gelnior.wordpress.com/">blog</a> 
+            about coding and social networks.
+        </p>
+        <h4>inspirations</h4>
+        <p>
+            I like <a href="http://37signals.com/rework/">Rework</a> and 
+            <a href="http://9gag.com/gag/36806">Life Manifesto</a>.
+        </p>
+    </div>
+    <div class="subject" id="pictures">
+        <h3>Hobbies</h3>
+        <div id="latest-flickr-images"><ul></ul></div>
+        <script>
+        $(document).ready(function() {
+            $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=32407380@N00&format=json&jsoncallback=?", function(data) {
+            var target = "#latest-flickr-images ul"; // Where is it going?
+            for (i = 0; i <= 0; i = i + 1) { 
+                var pic = data.items[i];
+                var liNumber = i + 1; // Add class to each LI (1-10)
+                $(target).append("<li class='flickr-image no-" + liNumber + "'><a title='" + pic.title + "' href='" + pic.link + "'><img src='" + pic.media.m + "' /></a></li>");
+            }});
+        })
+        </script>
+        <p>
+            About hobbies, I love photo (here is 
+            <a href="http://www.twinkso.com/portfolios/photograph/frank-r/">
+                my portfolio
+            </a>)
+            and I play the clarinet. I also enjoy chilling into cool bars and 
+            nice restaurants.
+        </p>
+    </div>
+    <div class="spacer"></div>
 
-<h3 class="section-title">Actual projects</h3>
-<div class="project" id="cozy">
-    <a href="http://www.mycozycloud.com/">
-<!--img src="images/cozy_logo.jpg" /-->
-<h3>Cozy</h3>
-</a>
-<p>
-More about that soon...
-</p>
-<p>
-technos: RailwayJS, Tornado, Django, MongoDB
-</p>
-</div>
+    <h3 class="section-title">Actual projects</h3>
+    <div class="project" id="cozy">
+        <a href="http://www.mycozycloud.com/">
+        <!--img src="images/cozy_logo.jpg" /-->
+        <h3>Cozy</h3>
+        </a>
+        <p>
+            More about that soon...
+        </p>
+        <p>
+            technos: RailwayJS, Tornado, Django, MongoDB
+        </p>
+    </div>
 
-<div class="project" id="newebe">
-    <a href="http://www.newebe.org/">
-<img src="images/newebe_logo.jpg" />
-<h3>Newebe</h3>
-</a>
-<p>
-Newebe is a distributed social network that aims to give you sharing 
-capabilities while preserving your privacy. Because you host Newebe at your
-home, you keep control on your data.
-</p>
-<p>
-technos: Coffeescript, Tornado, Couchdb.
-</p>
-</div>
+    <div class="project" id="newebe">
+        <a href="http://www.newebe.org/">
+            <img src="images/newebe_logo.jpg" alt="Newebe logo" />
+            <h3>Newebe</h3>
+        </a>
+        <p>
+            Newebe is a distributed social network that aims to give you 
+            sharing capabilities while preserving your privacy. Because you 
+            host Newebe at your home, you keep control on your data.
+        </p>
+        <p>
+            technos: Coffeescript, Tornado, Couchdb.
+        </p>
+    </div>
 
-<div class="project" id="beburlesque">
-  <a href="http://www.beburlesque.com/">
-<img src="images/beburlesque_logo.png" />
-<h3>Beburlesque</h3>
-</a>
-<p>
-Beburlesque is a webzine about Burlesque culture. We publish monthly 
-interviews, news, picture galeries, event agenda... 
-</p>
-<p>
-technos: Drupal
-</p>
-<p class="related">
-Be Burlesque is 
-<a href="http://beburlesque.com/le-livre/">a book</a> too.
-</p>
-</div>
+    <div class="project" id="beburlesque">
+        <a href="http://www.beburlesque.com/">
+            <img src="images/beburlesque_logo.png" alt="BeBurlesque logo" />
+            <h3>Beburlesque</h3>
+        </a>
+        <p>
+            Beburlesque is a webzine about Burlesque culture. We publish 
+            monthly interviews, news, picture galeries, event agenda... 
+        </p>
+        <p>
+            technos: Drupal
+        </p>
+        <p class="related">
+            Be Burlesque is 
+            <a href="http://beburlesque.com/le-livre/">a book</a> too.
+        </p>
+    </div>
 
-<div class="spacer"></div>
-<h3 class="section-title">Past projects</h3>
-<div class="project"  id="twinkso">
-  <a href="http://www.twinkso.com/">
-    <img src="images/twinkso_logo.jpg" />
-    <h3>Twinkso</h3>
-  </a>
-  <p>
-Twinkso is a simple social network for artists, specially, photographers, models
-and make-up artists. You just need to build a small portfolio of
-3 pictures, a short bio and links to your usual pages. Then you list
-people you worked with to connect your portofolio to theirs. 
-  </p>
-  <p>
-  technos: Django, MongoDB
-  </p>
-</div>
+    <div class="spacer"></div>
+    <h3 class="section-title">Past projects</h3>
 
-<div class="project" id="artforge">
-  <a href="http://www.hd3d.fr/artforge/">
-    <img src="images/artforge_logo.jpg" />
-      <h3>Artforge</h3>
-  </a>
-  <p>
-  As a full-time employee, I worked on Artforge, a web application suite 
-  dedicated to CG studios that aims to improve team collaboration. 
-  The company that produced Artforge is now closed. I built most of the 
-  application UIs.
-  </p>
-  <p>
-  technos: GWT, GXT, Restlet, MySQL
-  </p>
-</div>
+    <div class="project"  id="twinkso">
+        <a href="http://www.twinkso.com/">
+            <img src="images/twinkso_logo.jpg" alt="Twinkso logo" />
+            <h3>Twinkso</h3>
+        </a>
+        <p>
+            Twinkso is a simple social network for artists, specially, 
+            photographers, models and make-up artists. You just need to build 
+            a small portfolio of 3 pictures, a short bio and links to your 
+            usual pages. Then you list people you worked with to connect your 
+            portofolio to theirs. 
+        </p>
+        <p>
+            technos: Django, MongoDB
+        </p>
+    </div>
 
+    <div class="project" id="artforge">
+        <a href="http://www.hd3d.fr/artforge/">
+            <img src="images/artforge_logo.jpg" alt="Artforge logo" />
+            <h3>Artforge</h3>
+        </a>
+        <p>
+            As a full-time employee, I worked on Artforge, a web application 
+            suite dedicated to CG studios that aims to improve team 
+            collaboration. The company that produced Artforge is now closed. 
+            I built most of the application UIs.
+        </p>
+        <p>
+            technos: GWT, GXT, Restlet, MySQL
+        </p>
+    </div>
 
-<div class="project" id="dolebrai">
-<img src="images/dolebrai_logo.jpg" />
-<h3>Dolebrai</h3>
-<p>
-Dolebra&iuml was a webradio that brodcasted and promoted open music. 
-There were monthly mixes and a blog about open music news. <br />
-The website and the radio are no more available but you can still download
-compilations.
-</p>
-<p>
-technos: Django, Liquidsoap, MySQL
-</p>
-<p class="related">
-
-<a href="http://www.archive.org/details/DolebraCompilationVol.01">
-    Dolebrai Compilation vol. 01</a>, 
-<a href="http://www.archive.org/details/DolebraiCompilationVol.02">
-    Dolebrai Compilation vol. 02</a>
-</p>
-</div>
-
-
-</div>
-<div class="spacer"></div>
+    <div class="project" id="dolebrai">
+        <img src="images/dolebrai_logo.jpg" alt="Dolebra&iuml; logo" />
+        <h3>Dolebrai</h3>
+        <p>
+            Dolebra&iuml; was a webradio that brodcasted and promoted open 
+            music. There were monthly mixes and a blog about open music news. 
+            <br />
+            The website and the radio are no more available but you can still 
+            download compilations.
+        </p>
+        <p>
+            technos: Django, Liquidsoap, MySQL
+        </p>
+        <p class="related">
+            <a href="http://www.archive.org/details/DolebraCompilationVol.01">
+            Dolebrai Compilation vol. 01</a>, 
+            <a href="http://www.archive.org/details/DolebraiCompilationVol.02">
+            Dolebrai Compilation vol. 02</a>
+        </p>
+    </div>
+    <div class="spacer"></div>
 </div>
 </body>
 </html> 

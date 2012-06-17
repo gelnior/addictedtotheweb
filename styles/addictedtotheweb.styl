@@ -78,6 +78,15 @@ div.project
   min-height 600px
   text-align center
   border 10px solid transparent
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  shadow(5px 5px 5px shadowcolor)
+
+
+div.project:hover
+  shadow(2px 2px 15px #FCC)
+
 
 p.related
   font-style italic
@@ -91,20 +100,20 @@ p.related
   border-top-left-radius(30px 20px)
   border-bottom-left-radius(30px 20px)
   shadow(5px 5px 5px shadowcolor)
+  text-align center
 
 #photo
-  float right
   padding-left 20px
   padding-top 20px
-  width 150px
+  width 130px
 
 #publication
-  background-color #45B0E3
+  background-color #45A0E3
   text-align center
   shadow(5px 5px 5px shadowcolor)
 
 #pictures
-  background-color #FF0084
+  background-color #DD0084
   text-align center
   border-top-right-radius(30px 20px)
   border-bottom-right-radius(30px 20px)
@@ -117,43 +126,35 @@ p.related
   border-top-left-radius(30px 20px)
   border-bottom-left-radius(30px 20px)
   background-color #9999AD
-  shadow(5px 5px 5px shadowcolor)
 
 #newebe
   background-color #FFFFFF
   color #000000
-  shadow(5px 5px 5px shadowcolor)
 
 #artforge
   background-color #F4A012
   color #fff3dd
-  shadow(5px 5px 5px shadowcolor)
 
 #beburlesque
   background-color #473531
   color #fbe3dd
   border-top-right-radius(30px 20px)
   border-bottom-right-radius(30px 20px)
-  shadow(5px 5px 5px shadowcolor)
 
 #your-project
   border 10px solid transparent
   background-color #4A4
-  shadow(5px 5px 5px shadowcolor)
 
 #twinkso
   border-bottom-left-radius(30px 20px)
   border-top-left-radius(30px 20px)
   background-color black
-  shadow(5px 5px 5px shadowcolor)
 
 #dolebrai
   border-top-right-radius(30px 20px)
-  shadow(5px 5px 5px shadowcolor)
   background-color #6833CC
   color #EFE8FA
   border-bottom-right-radius(30px 20px)
-  shadow(5px 5px 5px shadowcolor)
 
 
 #latest-flickr-images ul
@@ -166,7 +167,8 @@ p.related
   padding 0
 
 .emphaze
-  font-style italic
+  margin-top 50px
+  font-weight bold
   font-size 20px
 
 .section-title

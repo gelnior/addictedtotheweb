@@ -18,7 +18,7 @@
         The web connects billions of people, 
         Free culture allows global solidarity, 
         Search engines gives infinite knowledge, 
-        Social networks lets massive sharing, <
+        Social networks lets massive sharing, 
         Because I want to be part of that, I make web apps." />
     <title>Frank Rousseau's Homepage</title>
 </head>
@@ -26,18 +26,21 @@
 <body>
 <div class="content">
     <div class="subject" id="presentation">
-        <a href="http://fr.linkedin.com/in/frankrousseau">
             <h1>Frank Rousseau</h1>
-        </a>
+        <a href="http://fr.linkedin.com/in/frankrousseau">
             <img id="photo" alt="My photo" src="images/photo_identite2.jpg"
             />
+        </a>
         <p class="spacer"></p>
         <p style="margin-top: 40px;">
             The web connects billions of people, <br />
             Free culture means global solidarity, <br />
             Social networks lets massive sharing, <br />
+            <p class="pre-emphase">
+                Because I want to be part of that,
+            </p>
             <p class="emphaze">
-                Because I want to be part of that, I make web apps.
+                I make web apps.
             </p>
         </p>
     </div>
@@ -74,6 +77,7 @@
                 }
             }).render().setUser('gelnior').start();
         </script>
+        <div class="subject-text">
         <p>
             Here is my <a href="http://gelnior.wordpress.com/">blog</a> 
             about coding and social networks.
@@ -83,6 +87,7 @@
             I like <a href="http://37signals.com/rework/">Rework</a> and 
             <a href="http://9gag.com/gag/36806">Life Manifesto</a>.
         </p>
+        </div>
     </div>
     <div class="subject" id="pictures">
         <h3>Hobbies</h3>
@@ -98,72 +103,73 @@
             }});
         })
         </script>
+        <div class="subject-text">
         <p>
             About hobbies, I love photo (here is 
             <a href="http://www.twinkso.com/portfolios/photograph/frank-r/">
-                my portfolio
-            </a>)
+                my portfolio</a>)
             and I play the clarinet. I also enjoy chilling into cool bars and 
             nice restaurants.
         </p>
+        </div>
     </div>
     <div class="spacer"></div>
 
     <h3 class="section-title">Actual projects</h3>
+    <a href="http://www.mycozycloud.com/">
     <div class="project" id="cozy">
-        <a href="http://www.mycozycloud.com/">
         <!--img src="images/cozy_logo.jpg" /-->
-        <h3>Cozy</h3>
-        </a>
         <p>
-            More about that soon...
+            <span class="emphaze">Cozy</span>...
+            more about that soon...
         </p>
         <p>
             technos: RailwayJS, Tornado, Django, MongoDB
         </p>
     </div>
+    </a>
 
-    <div class="project" id="newebe">
-        <a href="http://www.newebe.org/">
+    <a href="http://www.newebe.org/">
+        <div class="project" id="newebe">
             <img src="images/newebe_logo.jpg" alt="Newebe logo" />
             <h3>Newebe</h3>
-        </a>
-        <p>
-            Newebe is a distributed social network that aims to give you 
-            sharing capabilities while preserving your privacy. Because you 
-            host Newebe at your home, you keep control on your data.
-        </p>
-        <p>
-            technos: Coffeescript, Tornado, Couchdb.
-        </p>
-    </div>
+            <p>
+                <span class="emphaze">Newebe</span>
+                is a distributed social network that aims to give you 
+                sharing capabilities while preserving your privacy. Because you 
+                host Newebe at your home, you keep control on your data.
+            </p>
+            <p class="related">
+                technos: Coffeescript, Tornado, Couchdb.
+            </p>
+        </div>
+    </a>
 
+    <a href="http://www.beburlesque.com/">
     <div class="project" id="beburlesque">
-        <a href="http://www.beburlesque.com/">
             <img src="images/beburlesque_logo.png" alt="BeBurlesque logo" />
             <h3>Beburlesque</h3>
-        </a>
         <p>
-            Beburlesque is a webzine about Burlesque culture. We publish 
+            <span class="emphaze">Beburlesque</span>
+            is a webzine about Burlesque culture. We publish 
             monthly interviews, news, picture galeries, event agenda... 
         </p>
         <p>
-            technos: Drupal
+            Be Burlesque is a book too.
         </p>
         <p class="related">
-            Be Burlesque is 
-            <a href="http://beburlesque.com/le-livre/">a book</a> too.
+            technos: Drupal
         </p>
     </div>
+    </a>
 
     <div class="spacer"></div>
     <h3 class="section-title">Past projects</h3>
 
+    <a href="http://www.twinkso.com/">
     <div class="project"  id="twinkso">
-        <a href="http://www.twinkso.com/">
             <img src="images/twinkso_logo.jpg" alt="Twinkso logo" />
             <h3>Twinkso</h3>
-        </a>
         <p>
             Twinkso is a simple social network for artists, specially, 
             photographers, models and make-up artists. You just need to build 
@@ -171,23 +177,22 @@
             usual pages. Then you list people you worked with to connect your 
             portofolio to theirs. 
         </p>
-        <p>
+        <p class="related">
             technos: Django, MongoDB
         </p>
     </div>
+    </a>
 
     <div class="project" id="artforge">
-        <a href="http://www.hd3d.fr/artforge/">
             <img src="images/artforge_logo.jpg" alt="Artforge logo" />
             <h3>Artforge</h3>
-        </a>
         <p>
             As a full-time employee, I worked on Artforge, a web application 
             suite dedicated to CG studios that aims to improve team 
             collaboration. The company that produced Artforge is now closed. 
             I built most of the application UIs.
         </p>
-        <p>
+        <p class="related">
             technos: GWT, GXT, Restlet, MySQL
         </p>
     </div>
@@ -199,17 +204,16 @@
             Dolebra&iuml; was a webradio that brodcasted and promoted open 
             music. There were monthly mixes and a blog about open music news. 
             <br />
-            The website and the radio are no more available but you can still 
-            download compilations.
+            The website and the radio are no more available. 
         </p>
         <p>
-            technos: Django, Liquidsoap, MySQL
-        </p>
-        <p class="related">
             <a href="http://www.archive.org/details/DolebraCompilationVol.01">
             Dolebrai Compilation vol. 01</a>, 
             <a href="http://www.archive.org/details/DolebraiCompilationVol.02">
             Dolebrai Compilation vol. 02</a>
+        </p>
+        <p class="related">
+            technos: Django, Liquidsoap, MySQL
         </p>
     </div>
     <div class="spacer"></div>

@@ -147,7 +147,8 @@ p.related {
   -webkit-border-bottom-left-radius: 30px 20px;
   -moz-border-bottom-left-radius: 30px 20px;
   border-bottom-left-radius: 30px 20px;
-  background-color: #9999ad;
+  background-color: #f3f9fd;
+  color: #444;
 }
 #newebe {
   background-color: #fff;

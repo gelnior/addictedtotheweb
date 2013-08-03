@@ -72,9 +72,9 @@ div.project {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
-  -moz-box-shadow: 5px 5px 5px #404;
-  -webkit-box-shadow: 5px 5px 5px #404;
-  box-shadow: 5px 5px 5px #404;
+  -moz-box-shadow: 2px 2px 2px #404;
+  -webkit-box-shadow: 2px 2px 2px #404;
+  box-shadow: 2px 2px 2px #404;
   text-align: center;
 }
 div.project p {
@@ -107,9 +107,9 @@ p.related {
   -webkit-border-bottom-left-radius: 30px 20px;
   -moz-border-bottom-left-radius: 30px 20px;
   border-bottom-left-radius: 30px 20px;
-  -moz-box-shadow: 5px 5px 5px #404;
-  -webkit-box-shadow: 5px 5px 5px #404;
-  box-shadow: 5px 5px 5px #404;
+  -moz-box-shadow: 2px 2px 2px #404;
+  -webkit-box-shadow: 2px 2px 2px #404;
+  box-shadow: 2px 2px 2px #404;
   text-align: center;
 }
 #photo {
@@ -120,9 +120,9 @@ p.related {
 #publication {
   background-color: #45a0e3;
   text-align: center;
-  -moz-box-shadow: 5px 5px 5px #404;
-  -webkit-box-shadow: 5px 5px 5px #404;
-  box-shadow: 5px 5px 5px #404;
+  -moz-box-shadow: 2px 2px 2px #404;
+  -webkit-box-shadow: 2px 2px 2px #404;
+  box-shadow: 2px 2px 2px #404;
 }
 #pictures {
   background-color: #dd0084;
@@ -133,9 +133,9 @@ p.related {
   -webkit-border-bottom-right-radius: 30px 20px;
   -moz-border-bottom-right-radius: 30px 20px;
   border-bottom-right-radius: 30px 20px;
-  -moz-box-shadow: 5px 5px 5px #404;
-  -webkit-box-shadow: 5px 5px 5px #404;
-  box-shadow: 5px 5px 5px #404;
+  -moz-box-shadow: 2px 2px 2px #404;
+  -webkit-box-shadow: 2px 2px 2px #404;
+  box-shadow: 2px 2px 2px #404;
 }
 #pictures h3 {
   text-align: center;
@@ -153,14 +153,6 @@ p.related {
 #newebe {
   background-color: #fff;
   color: #000;
-}
-#artforge {
-  background-color: #f4a012;
-  color: #fff3dd;
-}
-#beburlesque {
-  background-color: #473531;
-  color: #fbe3dd;
   -webkit-border-top-right-radius: 30px 20px;
   -moz-border-top-right-radius: 30px 20px;
   border-top-right-radius: 30px 20px;
@@ -168,28 +160,35 @@ p.related {
   -moz-border-bottom-right-radius: 30px 20px;
   border-bottom-right-radius: 30px 20px;
 }
-#your-project {
-  border: 10px solid transparent;
-  background-color: #4a4;
-}
-#twinkso {
-  -webkit-border-bottom-left-radius: 30px 20px;
-  -moz-border-bottom-left-radius: 30px 20px;
-  border-bottom-left-radius: 30px 20px;
-  -webkit-border-top-left-radius: 30px 20px;
-  -moz-border-top-left-radius: 30px 20px;
-  border-top-left-radius: 30px 20px;
-  background-color: #000;
-}
-#dolebrai {
+#artforge {
+  background-color: #f4a012;
+  color: #fff3dd;
   -webkit-border-top-right-radius: 30px 20px;
   -moz-border-top-right-radius: 30px 20px;
   border-top-right-radius: 30px 20px;
+  -webkit-border-bottom-right-radius: 30px 20px;
+  -moz-border-bottom-right-radius: 30px 20px;
+  border-bottom-right-radius: 30px 20px;
+}
+#beburlesque {
+  background-color: #473531;
+  color: #fbe3dd;
+  -webkit-border-top-left-radius: 30px 20px;
+  -moz-border-top-left-radius: 30px 20px;
+  border-top-left-radius: 30px 20px;
+}
+#twinkso {
+  background-color: #000;
+}
+#dolebrai {
   background-color: #6833cc;
   color: #efe8fa;
   -webkit-border-bottom-right-radius: 30px 20px;
   -moz-border-bottom-right-radius: 30px 20px;
   border-bottom-right-radius: 30px 20px;
+  -webkit-border-bottom-left-radius: 30px 20px;
+  -moz-border-bottom-left-radius: 30px 20px;
+  border-bottom-left-radius: 30px 20px;
 }
 #latest-flickr-images ul {
   list-style-type: none;

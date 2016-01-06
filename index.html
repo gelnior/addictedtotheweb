@@ -16,179 +16,191 @@
             src="app/addictedtotheweb.dev.js"></script>
     <meta name="description" content="
         The web connects billions of people, 
-        Free culture allows global solidarity, 
+        The Free culture allows global solidarity, 
         Social networks allows massive sharing, 
         Because I want to be part of that, I make web apps." />
     <title>Frank Rousseau's Homepage</title>
 </head>
 
 <body>
-<div class="content">
-    <div class="subject" id="presentation">
-            <h1>Frank Rousseau</h1>
-        <a href="http://fr.linkedin.com/in/frankrousseau">
-            <img id="photo" alt="My photo" src="images/photo_identite2.jpg"
-            />
-        </a>
-        <p class="spacer"></p>
-        <p style="margin-top: 40px;">
-            The web connects billions of people, <br />
-            Free culture means global solidarity, <br />
-            Social networks allow massive sharing, <br />
-            <p class="pre-emphase">
-                Because I want to be part of that,
-            </p>
-            <p class="emphaze">
-                I make web apps.
-            </p>
-        </p>
-    </div>
-    <div class="subject" id="publication">
-        <h3>Writings</h3>
-        <div class="subject-text">
-        <p>
-        <a href="https://twitter.com/gelnior">@gelnior</a>
-        </p>
-        <p>
-            <a href="http://gelnior.wordpress.com/">my blog</a> <br />
-        </p>
-        <p>
-            <a href="http://www.slideshare.net/gelnior/presentations">
-            my talk slides</a> <br />
-        </p>
-        <h4>inspirations</h4>
-        <p>
-            I like <a href="http://37signals.com/rework/">Rework</a> and 
-            <a href="http://9gag.com/gag/36806">Life Manifesto</a>.
-        </p>
-        </div>
-    </div>
-    <div class="subject" id="pictures">
-        <h3>Hobbies</h3>
-        <div id="latest-flickr-images"><ul></ul></div>
-        <script>
-        $(document).ready(function() {
-            $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=32407380@N00&format=json&jsoncallback=?", function(data) {
-            var target = "#latest-flickr-images ul"; // Where is it going?
-            for (i = 0; i <= 0; i = i + 1) { 
-                var pic = data.items[i];
-                var liNumber = i + 1; // Add class to each LI (1-10)
-                $(target).append("<li class='flickr-image no-" + liNumber + "'><a title='" + pic.title + "' href='" + pic.link + "'><img src='" + pic.media.m + "' /></a></li>");
-            }});
-        })
-        </script>
-        <div class="subject-text">
-        <p>
-            About hobbies, I love photo
-            and I play the clarinet. I also enjoy chilling into cool bars and 
-            nice restaurants.
-        </p>
-        </div>
-    </div>
-    <div class="spacer"></div>
+<header class="headline">
+    The web connects billions of people, <br />
+    Free cultures enable global solidarity, <br />
+    Social networks allow massive sharing, <br />
+    <span class="main">Because I want to be part of it,
+    I make softwares.</span>
+</header>
 
-    <h3 class="section-title">Current projects</h3>
-    <a href="https://cozycloud.cc/">
-    <div class="project" id="cozy">
-        <img src="images/cozycloud_logo.png" alt="Cozy Cloud Logo" />
-        <p>
-        <span class="emphaze">Cozy Cloud</span> is a virtual assistant
-        assistant that allows you to manage easily your web apps
-        and your data in a single location you control.
-        </p>
-        <p class="related">
-            technos: Backbone, NodeJS, CouchDB
-        </p>
-    </div>
-    </a>
+<section class="content">
+<p class="center">
+<img id="photo" alt="My photo" src="images/photo.jpg" />
+</p>
+<p>
+My name is Frank Rousseau and I’m 33. I've been a web addict for 18 years. I
+love using and understanding web applications as much I enjoy building them.
+I made my first website in 1997, it was a poetry registry. Since then, I've
+never stopped. Watching, showing, sharing, learning, doing with people from all
+over the world is not something you can give up easily. And you know what? I've
+never tried. It's good and it's something I want forever.
+</p>
 
-    <a href="http://www.newebe.org/">
-        <div class="project" id="newebe">
-            <img src="images/newebe_logo.jpg" alt="Newebe logo" />
-            <h3>Newebe</h3>
-            <p>
-                <span class="emphaze">Newebe</span>
-                is a distributed social network that aims to give you 
-                sharing capabilities while preserving your privacy. 
-            </p>
-            <p class="related">
-                technos: Backbone, Tornado, Couchdb.
-            </p>
-        </div>
-    </a>
+<p>
+About my professional activity, I'm the Co-Founder and CTO of Cozy Cloud, a
+startup that builds FOSS personal clouds. We are a remote office team of
+eighteen and we love to publish what we do. It's very exciting to deal with a
+special internal organization and contributions from the community. I'm glad to
+have a wonderful job like this. 
+</p>
 
-    <div class="spacer"></div>
-    <h3 class="section-title">Past projects</h3>
+<p>
+In my spare time, I maintain pet projects and perform talks about
+Free and Open Source technologies. I had the opportunity to speak at JDLL,
+RMLL, DotJS, ParisJS, LyonJS, Human Talks, Quantified Self Europe and Hy!
+Berlin. <br />
+Aside of coding, I play the clarinet and I enjoy chilling into cool
+bars and nice restaurants.
+</p>
+Another thing I do is to share my thoughts about software development,
+startups and self-hosting. You can read them on the following medias:
 
-    <a href="http://www.beburlesque.com/">
-    <div class="project" id="beburlesque">
-            <img src="images/beburlesque_logo.png" alt="BeBurlesque logo" />
-            <h3>Beburlesque</h3>
-        <p>
-            <span class="emphaze">Beburlesque</span>
-            is a webzine about Burlesque culture. We publish 
-            monthly interviews, news, picture galeries, event agenda... 
-        </p>
-        <p>
-            Be Burlesque is a book too.
-        </p>
-        <p class="related">
-            technos: Drupal
-        </p>
-    </div>
-    </a>
+<p class="center social">
+    <a href="http://frank.cozycloud.cc/public/blog">
+    <img src="images/blog.svg" /></a>
+    <a href="https://twitter.com/gelnior">
+    <img src="images/twitter.svg" /></a>
+    <a href="https://github.com/frankrousseau">
+    <img src="images/github.svg" /></a>
+    <a href="https://www.linkedin.com/in/frankrousseau">
+    <img src="images/linkedin.svg" /></a>
+    <a href="https://www.slideshare.net/gelnior/presentations">
+    <img src="images/slideshare.svg" /></a>
+    <a href="https://www.flickr.com/photos/gelnior">
+    <img src="images/flickr.svg" /></a>
+</p>
 
-    <a href="http://www.twinkso.com/">
-    <div class="project"  id="twinkso">
-            <img src="images/twinkso_logo.jpg" alt="Twinkso logo" />
-            <h3>Twinkso</h3>
-        <p>
-            Twinkso is a simple social network for artists, specially, 
-            photographers, models and make-up artists. You just need to build 
-            a small portfolio of 3 pictures, a short bio and links to your 
-            usual pages. Then you list people you worked with to connect your 
-            portofolio to theirs. 
-        </p>
-        <p class="related">
-            technos: Django, MongoDB
-        </p>
-    </div>
-    </a>
+<h3>Inspirations</h3>
+<p>
+  For my working activities, <a href="http://37signals.com/rework/">Rework</a>
+  and <a href="http://lawsofsimplicity.com/">The Laws of Simplicity</a> are a
+  great source of ideas. With their pragmatic frameworks, they help me to deal
+  with uncertainty and achieve stuff.
+</p>
+<p>
+  When it's about building a team or a community I dig into 
+  <a href="http://www.davidmarquet.com/Books.html">Turn your ship around</a>
+  and the <a href="http://zguide.zeromq.org/page:all#toc130">chapter 6 of the
+  ZMQ guide</a>.
+  They give good tips about making people work well together and connect
+  their strengths.
+</p>
+  
+<p>
+  I read a lot about personal development, but finally, when I need confidence
+  and courage I think about <a href="https://en.wikipedia.org/wiki/Naruto">
+  Naruto</a>
+  and <a href="https://en.wikipedia.org/wiki/Monkey_D._Luffy">Luffy (One
+  Piece)</a>. They never give up and can see when people have something good
+  inside them.
+  When it's time to be a little bit cynic, glamourous and honest I turn to <a
+  href="https://en.wikipedia.org/wiki/Inspector_Canardo">Canardo</a>. My last
+  discovery is the funny and humble <a
+  href="https://en.wikipedia.org/wiki/One-Punch_Man">One
+  Punch Man</a>. I like how he stays 
+  simple despite his super powers.
+</p>
 
-    <div class="project" id="artforge">
-            <img src="images/artforge_logo.jpg" alt="Artforge logo" />
-            <h3>Artforge</h3>
-        <p>
-            As a full-time employee, I worked on Artforge, a web application 
-            suite dedicated to CG studios that aims to improve team 
-            collaboration. The company that produced Artforge is now closed. 
-            I built most of the application UIs.
-        </p>
-        <p class="related">
-            technos: GWT, GXT, Restlet, MySQL
-        </p>
-    </div>
+<p>
+  But overall, the text that resumes the best my way of living is 
+  <a href="http://9gag.com/gag/36806">The Life Manifesto</a>.
+</p>
 
-    <div class="project" id="dolebrai">
-        <img src="images/dolebrai_logo.jpg" alt="Dolebra&iuml; logo" />
-        <h3>Dolebrai</h3>
-        <p>
-            Dolebra&iuml; was a webradio that brodcasted and promoted open 
-            music. There were monthly mixes and a blog about open music news. 
-            <br />
-            The website and the radio are no more available. 
-        </p>
-        <p>
-            <a href="http://www.archive.org/details/DolebraCompilationVol.01">
-            Dolebrai Compilation vol. 01</a>, 
-            <a href="http://www.archive.org/details/DolebraiCompilationVol.02">
-            Dolebrai Compilation vol. 02</a>
-        </p>
-        <p class="related">
-            technos: Django, Liquidsoap, MySQL
-        </p>
-    </div>
-    <div class="spacer"></div>
+
+<h3 class="section-title">Current projects</h3>
+
+<dl>
+<dt>
+<a href="http://cozy.io">Cozy</a>
+</dt>
+<dd>
+Cozy makes the personal server as simple to use as a smartphone. It turns a
+hardware of yours in a personal assistant that collects and connects your
+data. With it your digital life becomes smoother.
+</dd>
+<dt>
+<a href="http://github.com/cozy-labs/konnectors">Konnectors</a>
+</dt>
+<dd>
+Konnectors is an application for Cozy. It allows to fetch 
+and store data from many vendors automatically (Jawbone, Withings, phone
+providers, etc.).
+</dd>
+<dt>
+<a href="http://github.com/cozy-labs/kyou">KYou</a>
+</dt>
+<dd>
+KYou is an application for Cozy. It allows to extract analytics from your 
+personal data. It comes with a comparator tool that helps you find relation
+between your data.
+</dd>
+</dl>
+
+<h3 class="section-title">Past projects</h3>
+<dl>
+<dt>
+<a href="http://newebe.org">
+Newebe
+</a>
+</dt>
+<dd>
+Newebe is a distributed social network. Every users host their account. It
+allows social interaction without compromising your privacy. One day I expect
+to turn it into a Cozy app.
+</dd>
+<dt>
+<a href="https://www.facebook.com/BeBurlesquecom-86214306533/?fref=ts">
+Beburlesque</a>
+</dt>
+<dd>
+Beburlesque was a webzine about Burlesque culture. We published
+monthly interviews, news, picture galeries, events... We made a book 
+from it too. We sold 2000 copies.
+</dd>
+<dl>
+<dt>
+<a href="http://www.slideshare.net/FHCap/parisfxlab-artforge-by-hd3d">
+Artforge
+</a>
+</dt>
+<dd>
+As a full-time employee, I worked on Artforge, a web application 
+suite dedicated to CG studios that aims to improve team 
+collaboration. I built most of the application UIs. Unfortunately the company
+closed and the software is discontinued.
+</dd>
+<dt>
+<a href="http://www.archive.org/details/DolebraiCompilationVol.02">
+Dolebrai
+</a>
+</dt>
+<dd>
+Dolebraï was a webradio that brodcasted and promoted open music. There were
+monthly mixes and a blog about open music news.  The website and the radio are
+no more available. 
+</dd>
+</dl>
+<p></p>
+<h3 class="section-title">Press</h3>
+Some articles related to Cozy where I'm mentioned:
+<a href="http://www.wired.com/2013/09/cozy-cloud/">Wired</a>,
+<a href="http://venturebeat.com/2014/06/17/cozycloud-raises-1-1m-to-help-you-build-your-own-personal-cloud-server/">
+Venture Beat</a>,
+<a href="http://www.frenchweb.fr/cloud-personnel-le-francais-cozy-cloud-leve-800-000-euros/155597">French
+Web</a> and
+<a href="http://framablog.org/2015/03/11/un-poids-lourd-du-libre-sur-un-nuage-douillet/">Framablog</a>.
+<div class="center">
+  <img src="images/eyes.jpg" alt="Eyes Doodle" />
 </div>
+
+</section>
 </body>
 </html> 

@@ -73,6 +73,22 @@ p:last-child {
 .center {
   text-align: center;
 }
+.dots {
+  font-size: 0.7em;
+  padding: 2em;
+}
+.dots span {
+  margin: 0.6em;
+}
+.dots .green {
+  color: #8dd593;
+}
+.dots .blue {
+  color: #8595e1;
+}
+.dots .red {
+  color: #e07b91;
+}
 a,
 a:hover,
 a:visited {

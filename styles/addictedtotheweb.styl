@@ -3,7 +3,6 @@
     font-style normal
     src url(fonts/lato.woff)
 
-
 body
     background-color #FEFEFE
     color #333
@@ -13,16 +12,16 @@ body
     padding 1em
 
 #photo
+    border-radius 50%
     margin-bottom 2em
+    max-width 200px
+    height auto
 
 p:first-child
     margin-bottom 1em
 
 p:last-child
     margin-bottom 0
-
-#photo
-    border-radius 50%
 
 .headline
     text-align center
@@ -50,11 +49,19 @@ p:last-child
 
     @media (max-width:650px)
         font-size 1.2em
-        min-height 40vh
+        min-height 70vh
+        padding-top 15vh
 
 .content
     max-width 800px
     margin auto
+
+    h3
+        margin-top 2.5em
+        margin-bottom 0.5em
+
+    h3:first-of-type
+        margin-top 1.5em
 
 .center
     text-align center
@@ -74,22 +81,62 @@ p:last-child
         color rgb(224,123,145)
 
 a
-a:hover
-a:visited
     color #333
+    text-decoration none
 
 a:visited
     color #333
+
+a:hover
+    color #e07b91
+    text-decoration underline
+
+a:focus-visible
+    outline 2px solid #8595e1
+    outline-offset 2px
 
 .social
     margin 2em 0 6em 0
+    display flex
+    flex-wrap wrap
+    align-items center
+    justify-content center
+    gap 1.5em
+
+    a
+        display flex
+        align-items center
+        justify-content center
+        width 2.5em
+        height 2.5em
+        flex-shrink 0
 
     img
         width 2em
-        margin 0 1em
+        height 2em
+        margin 0
+        object-fit contain
+
+    a:hover img
+        opacity 0.75
+
+dl
+    dt
+        margin-top 1.5em
+
+    dt:first-child
+        margin-top 0
+
+    dd
+        margin 0.5em 0 0
 
 .footer-image
     width 100%
+    height auto
 
 .mt2
- margin-top 2em
+    margin-top 2em
+
+    img
+        max-width 100%
+        height auto

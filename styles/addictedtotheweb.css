@@ -145,15 +145,7 @@ p:last-child {
 }
 .dots span {
   margin: 0.6em;
-}
-.dots .green {
-  color: #8dd593;
-}
-.dots .blue {
-  color: #8595e1;
-}
-.dots .red {
-  color: #e07b91;
+  color: #bbb;
 }
 a {
   color: #333;

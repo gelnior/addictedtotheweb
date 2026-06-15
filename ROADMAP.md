@@ -33,9 +33,9 @@ Sans changer le look.
 
 ## Technique
 
-- [ ] `rel="noopener noreferrer"` sur les liens `target="_blank"` si ajoutés
-- [ ] `mailto:` optionnel à côté de `frank[at]addictedtointer.net`
-- [ ] Préchargement de la police Lato (si le fichier est versionné)
+- [x] `rel="noopener noreferrer"` sur les liens `target="_blank"` si ajoutés
+- [x] `mailto:` optionnel à côté de `frank[at]rousseau.paris`
+- [x] Préchargement de la police Lato (si le fichier est versionné)
 
 ## Style
 

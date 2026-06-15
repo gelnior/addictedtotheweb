@@ -215,3 +215,12 @@ dl dd {
   max-width: 100%;
   height: auto;
 }
+.talks-photo {
+  border-radius: 0.6em;
+}
+.talks-figure {
+  margin: 0;
+}
+.talks-figure figcaption {
+  margin-top: 0.6em;
+}

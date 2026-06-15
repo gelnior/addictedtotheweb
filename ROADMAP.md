@@ -18,8 +18,8 @@ Améliorations possibles pour la page perso, en gardant le style minimaliste.
 
 Priorité haute — clarifier qui tu es aujourd’hui.
 
-- [ ] Lien discret vers Kitsu ou CGWire dès la première phrase de **Career**
-- [ ] **Press** : garder 3–5 liens récents (Kitsu, indie, podcasts) + une ligne du type *« Older press about Cozy Cloud »* avec 2–3 liens
+- [x] Lien discret vers Kitsu ou CGWire dès la première phrase de **Career**
+- [x] **Press** : garder 3–5 liens récents (Kitsu, indie, podcasts) + une ligne du type *« Older press about Cozy Cloud »* avec 2–3 liens
 - [ ] **Inspirations** : réduire à un paragraphe, ou déplacer vers le blog (*more about me*)
 - [ ] **Past projects** : ne garder que 4–5 projets les plus parlants pour ton profil actuel
 

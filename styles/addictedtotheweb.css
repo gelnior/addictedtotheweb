@@ -42,18 +42,18 @@ p:last-child {
 .headline .main {
   font-weight: bold;
 }
-.scroll-hint {
+.headline .scroll-hint {
   margin-top: auto;
   padding-top: 4em;
   padding-bottom: 2em;
   opacity: 0.35;
   transition: opacity 0.2s ease;
 }
-.scroll-hint:hover {
+.headline .scroll-hint:hover {
   opacity: 0.7;
   text-decoration: none;
 }
-.scroll-chevron {
+.headline .scroll-chevron {
   display: block;
   width: 0.9em;
   height: 0.9em;
@@ -88,14 +88,16 @@ p:last-child {
     min-height: 70vh;
     padding-top: 15vh;
   }
-  .content-start {
-    height: 10vh;
-  }
 }
 .content-start {
   display: block;
   height: 14vh;
   min-height: 4em;
+}
+@media (max-width: 650px) {
+  .content-start {
+    height: 10vh;
+  }
 }
 .content {
   max-width: 800px;
@@ -109,6 +111,30 @@ p:last-child {
 }
 .content h3:first-of-type {
   margin-top: 1.5em;
+}
+.press-intro {
+  margin: 0 0 0.4em;
+}
+.press-list {
+  margin: 1em 0;
+}
+.press-item {
+  display: grid;
+  grid-template-columns: 2.8em 1fr;
+  column-gap: 0.6em;
+  margin: 0.2em 0 0;
+  line-height: 1.35;
+  font-size: 0.9em;
+}
+.press-item time {
+  display: none;
+}
+.press-item .press-year {
+  font-size: 0.8em;
+  margin-top: 3px;
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+  color: color-mix(in srgb, #888 calc(var(--fade) * 0.8), #2a2a2a);
 }
 .center {
   text-align: center;

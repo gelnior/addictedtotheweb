@@ -35,6 +35,17 @@ p:last-child {
 .headline .main {
   font-weight: bold;
 }
+.scroll-hint {
+  margin-top: 1.5em;
+  font-size: 0.45em;
+  line-height: 1;
+}
+.scroll-hint a {
+  text-decoration: none;
+}
+.scroll-hint a:hover {
+  text-decoration: none;
+}
 @media (max-width: 1400px) {
   .headline {
     font-size: 2.4em;
@@ -69,6 +80,7 @@ p:last-child {
 .content h3 {
   margin-top: 2.5em;
   margin-bottom: 0.5em;
+  scroll-margin-top: 1em;
 }
 .content h3:first-of-type {
   margin-top: 1.5em;

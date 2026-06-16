@@ -105,18 +105,18 @@ p:last-child {
   padding-top: 2em;
 }
 .content h3 {
-  margin-top: 2.5em;
-  margin-bottom: 0.5em;
+  margin-top: 4em;
+  margin-bottom: 2em;
   scroll-margin-top: 1em;
-}
-.content h3:first-of-type {
-  margin-top: 1.5em;
+  text-align: center;
 }
 .press-intro {
   margin: 0 0 0.4em;
 }
 .press-list {
-  margin: 1em 0;
+  margin: 3em auto;
+  width: fit-content;
+  max-width: 100%;
 }
 .press-item {
   display: grid;

@@ -110,7 +110,8 @@ p:last-child {
   scroll-margin-top: 1em;
   text-align: center;
 }
-.press-intro {
+.press-intro,
+.talks-intro {
   margin: 0 0 0.4em;
 }
 .press-list {
@@ -135,6 +136,41 @@ p:last-child {
   font-weight: bold;
   font-variant-numeric: tabular-nums;
   color: color-mix(in srgb, #888 calc(var(--fade) * 0.8), #2a2a2a);
+}
+.talks-list {
+  margin: 3em auto;
+  max-width: 100%;
+}
+.talks-table {
+  table-layout: fixed;
+  width: 38em;
+  max-width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  line-height: 1.35;
+}
+.talks-table .talks-col-year {
+  width: 3em;
+}
+.talks-table .talks-col-event {
+  width: 12em;
+}
+.talks-table td {
+  padding: 0.15em 0.8em 0.15em 0;
+  vertical-align: baseline;
+}
+.talks-table .talks-year {
+  font-size: 0.8em;
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+  color: color-mix(in srgb, #888 calc(var(--fade) * 0.8), #2a2a2a);
+}
+.talks-table .talks-event {
+  white-space: nowrap;
+}
+.talks-table .talks-subject {
+  color: #333;
 }
 .center {
   text-align: center;

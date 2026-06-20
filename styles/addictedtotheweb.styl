@@ -102,10 +102,35 @@ p:last-child
 .talks-intro
     margin 0 0 0.4em
 
+.arc-title
+    display flex
+    align-items center
+    gap 1em
+    margin 1.5em 0 0.5em
+    font-size 0.975rem
+    font-weight normal
+    color #bbb
+    letter-spacing 0.04em
+    text-transform uppercase
+    text-align center
+
+    &::before
+    &::after
+        content ''
+        flex 1
+        height 1px
+        background #ddd
+
+    &:first-child
+        margin-top 0
+
 .press-list
     margin 3em auto
     width fit-content
     max-width 100%
+
+    .arc-title
+        width 100%
 
 .press-item
     display grid
@@ -160,6 +185,17 @@ p:last-child
 
     .talks-subject
         color #333
+
+    .arc-row td
+        padding 0
+        vertical-align middle
+
+    .arc-row .arc-title
+        width 100%
+        margin 1.5em 0 0.5em
+
+    .arc-row:first-child .arc-title
+        margin-top 0
 
 .center
     text-align center

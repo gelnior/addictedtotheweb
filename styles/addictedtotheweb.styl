@@ -99,6 +99,7 @@ p:last-child
         text-align center
 
 .press-intro
+.talks-intro
     margin 0 0 0.4em
 
 .press-list
@@ -114,15 +115,51 @@ p:last-child
     line-height 1.35
     font-size 0.9em
 
+.press-item
     time
         display none
 
-    .press-year
+.press-item .press-year
+    font-size 0.8em
+    margin-top 3px
+    font-weight bold
+    font-variant-numeric tabular-nums
+    color unquote('color-mix(in srgb, #888 calc(var(--fade) * 0.8), #2a2a2a)')
+
+.talks-list
+    margin 3em auto
+    max-width 100%
+
+.talks-table
+    table-layout fixed
+    width 38em
+    max-width 100%
+    margin 0 auto
+    border-collapse collapse
+    font-size 0.9em
+    line-height 1.35
+
+    .talks-col-year
+        width 3em
+
+    .talks-col-event
+        width 12em
+
+    td
+        padding 0.15em 0.8em 0.15em 0
+        vertical-align baseline
+
+    .talks-year
         font-size 0.8em
-        margin-top 3px
         font-weight bold
         font-variant-numeric tabular-nums
         color unquote('color-mix(in srgb, #888 calc(var(--fade) * 0.8), #2a2a2a)')
+
+    .talks-event
+        white-space nowrap
+
+    .talks-subject
+        color #333
 
 .center
     text-align center
